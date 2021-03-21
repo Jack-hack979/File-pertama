@@ -1,33 +1,20 @@
-Shell Script For Attacking Wireless Connections Using Built-In Kali Tools. Supports All Securities (WEP, WPS, WPA, WPA2)
+# termux-ubuntu
 
+A script to install Ubuntu chroot in Termux
 
-![Image](http://i.imgur.com/AjQIOik.jpg)
-<br/><br/>
-![Image](http://i.imgur.com/VK4Jd4v.jpg)
-<br/><br/>
-![Image](http://i.imgur.com/92EReev.jpg)
-<br/><br/>
-![Image](http://i.imgur.com/U7GG5qz.jpg)
-<br/><br/>
-![WEP](http://i.imgur.com/LF1g15f.jpg)
-<br/><br/>
-![Image](http://i.imgur.com/80ImpOo.jpg)
-<br/><br/>
-![Image](http://i.imgur.com/aBQVYqe.jpg)
-<br/><br/>
-![Image](http://i.imgur.com/8IA7NSg.jpg)
-<br/><br/>
-![Image](http://i.imgur.com/ItblUIv.jpg)
-<br/><br/>
-![Image](http://i.imgur.com/msIXnMB.jpg)
-<br/><br/>
-![Image](http://i.imgur.com/KEwNXH6.jpg)
-<br/><br/>
-![Image](http://i.imgur.com/WOKuzWc.jpg)
-<br/><br/>
-![Image](http://i.imgur.com/O8V5zLn.jpg)
-<br/><br/>
-![Image](http://i.imgur.com/I1XYuIu.jpg)
-<br/><br/>
-![EXTRAS](http://i.imgur.com/mqJpIAI.jpg)
-<br/><br/>
+You need to install wget and proot in Termux before using this script.
+
+```
+pkg install wget proot
+```
+
+The script will make its files in the current directory. So if you want your Ubuntu-filesystem at a particular location switch to that folder first and then call the script with it's relative path. Example:
+```
+mkdir -p ~/jails/ubuntu
+cd ~/jails/ubuntu
+wget https://raw.githubusercontent.com/Neo-Oli/termux-ubuntu/master/ubuntu.sh
+bash ubuntu.sh
+```
+
+After running it you can run "start-ubuntu.sh" to switch into your ubuntu
+
